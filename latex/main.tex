@@ -1,0 +1,234 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Essential Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx} % Times Roman typography
+\usepackage[a4paper, left=24mm, right=24mm, top=24mm, bottom=25mm]{geometry}
+\usepackage{graphicx}
+\usepackage[table,svgnames,dvipsnames]{xcolor}
+\usepackage{amsmath, amssymb}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{eso-pic}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% --- Custom Colors ---
+\definecolor{darkred}{RGB}{140, 20, 20}
+\definecolor{navyblue}{RGB}{0, 32, 96}
+
+% --- Hyperref Setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=navyblue,
+    urlcolor=blue,
+    citecolor=darkred,
+    pdftitle={DESIGN AND FABRICATION OF PARABOLIC WATER HEATER WITH SOLAR TRACKING AND POWER GENERATION},
+    pdfauthor={Government Polytechnic Amravati - Department of Mechanical Engineering}
+}
+
+% --- Code Listing Styling for Arduino C++ ---
+\lstset{
+    language=C++,
+    basicstyle=\fontsize{9.5}{13}\ttfamily,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red!70!black},
+    commentstyle=\color{green!50!black}\itshape,
+    numberstyle=\tiny\color{gray},
+    numbers=none,
+    backgroundcolor=\color{gray!6},
+    frame=single,
+    rulecolor=\color{gray!50},
+    breaklines=true,
+    tabsize=2,
+    showstringspaces=false
+}
+
+% --- Double Border on Every Numbered Content Page ---
+\newcommand\DrawDoubleBorder{
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[line width=1.5pt, color=black]
+      ([xshift=12mm, yshift=-12mm]current page.north west)
+      rectangle
+      ([xshift=-12mm, yshift=12mm]current page.south east);
+    \draw[line width=0.5pt, color=black]
+      ([xshift=13.8mm, yshift=-13.8mm]current page.north west)
+      rectangle
+      ([xshift=-13.8mm, yshift=13.8mm]current page.south east);
+  \end{tikzpicture}
+}
+
+% --- Page Header and Footer Styling ---
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\fontsize{11}{14}\selectfont \textbf{\textasciitilde\ \thepage\ \textasciitilde}}
+
+% Automatically draw double border on every page using fancyhdr
+\AddToShipoutPictureBG{%
+  \ifnum\value{page}>0
+    \ifnum\value{page}<41
+      % Preliminary pages (1 to 8 in PDF have page counter <= 0 or empty pagestyle)
+    \fi
+  \fi
+}
+
+\begin{document}
+
+% ==============================================================================
+% MODULAR PAGE INCLUSIONS (PAGES 1 TO 48)
+% ==============================================================================
+
+% --- Page 1 ---
+\input{pages/page_01.tex}
+
+% --- Page 2 ---
+\input{pages/page_02.tex}
+
+% --- Page 3 ---
+\input{pages/page_03.tex}
+
+% --- Page 4 ---
+\input{pages/page_04.tex}
+
+% --- Page 5 ---
+\input{pages/page_05.tex}
+
+% --- Page 6 ---
+\input{pages/page_06.tex}
+
+% --- Page 7 ---
+\input{pages/page_07.tex}
+
+% --- Page 8 ---
+\input{pages/page_08.tex}
+
+% --- Page 9 ---
+\input{pages/page_09.tex}
+
+% --- Page 10 ---
+\input{pages/page_10.tex}
+
+% --- Page 11 ---
+\input{pages/page_11.tex}
+
+% --- Page 12 ---
+\input{pages/page_12.tex}
+
+% --- Page 13 ---
+\input{pages/page_13.tex}
+
+% --- Page 14 ---
+\input{pages/page_14.tex}
+
+% --- Page 15 ---
+\input{pages/page_15.tex}
+
+% --- Page 16 ---
+\input{pages/page_16.tex}
+
+% --- Page 17 ---
+\input{pages/page_17.tex}
+
+% --- Page 18 ---
+\input{pages/page_18.tex}
+
+% --- Page 19 ---
+\input{pages/page_19.tex}
+
+% --- Page 20 ---
+\input{pages/page_20.tex}
+
+% --- Page 21 ---
+\input{pages/page_21.tex}
+
+% --- Page 22 ---
+\input{pages/page_22.tex}
+
+% --- Page 23 ---
+\input{pages/page_23.tex}
+
+% --- Page 24 ---
+\input{pages/page_24.tex}
+
+% --- Page 25 ---
+\input{pages/page_25.tex}
+
+% --- Page 26 ---
+\input{pages/page_26.tex}
+
+% --- Page 27 ---
+\input{pages/page_27.tex}
+
+% --- Page 28 ---
+\input{pages/page_28.tex}
+
+% --- Page 29 ---
+\input{pages/page_29.tex}
+
+% --- Page 30 ---
+\input{pages/page_30.tex}
+
+% --- Page 31 ---
+\input{pages/page_31.tex}
+
+% --- Page 32 ---
+\input{pages/page_32.tex}
+
+% --- Page 33 ---
+\input{pages/page_33.tex}
+
+% --- Page 34 ---
+\input{pages/page_34.tex}
+
+% --- Page 35 ---
+\input{pages/page_35.tex}
+
+% --- Page 36 ---
+\input{pages/page_36.tex}
+
+% --- Page 37 ---
+\input{pages/page_37.tex}
+
+% --- Page 38 ---
+\input{pages/page_38.tex}
+
+% --- Page 39 ---
+\input{pages/page_39.tex}
+
+% --- Page 40 ---
+\input{pages/page_40.tex}
+
+% --- Page 41 ---
+\input{pages/page_41.tex}
+
+% --- Page 42 ---
+\input{pages/page_42.tex}
+
+% --- Page 43 ---
+\input{pages/page_43.tex}
+
+% --- Page 44 ---
+\input{pages/page_44.tex}
+
+% --- Page 45 ---
+\input{pages/page_45.tex}
+
+% --- Page 46 ---
+\input{pages/page_46.tex}
+
+% --- Page 47 ---
+\input{pages/page_47.tex}
+
+% --- Page 48 ---
+\input{pages/page_48.tex}
+
+
+\end{document}

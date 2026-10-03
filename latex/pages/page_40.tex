@@ -1,0 +1,32 @@
+% ==============================================================================
+% PAGE 40: PROGRAMING - PART 3 (Numbered Page 32)
+% ==============================================================================
+\begin{lstlisting}[language=C++]
+void motorLDRwest(){
+  digitalWrite(motr1, HIGH); 
+  digitalWrite(motr2, LOW); 
+  delay(2000); 
+  digitalWrite(motr1, LOW); 
+  digitalWrite(motr2, LOW); 
+  delay(1500);
+}
+
+void motorStop(){
+  digitalWrite(motr1, LOW); 
+  digitalWrite(motr2, LOW);
+}
+
+void loop(){
+  byte east_button_state = digitalRead(east_button_pin); 
+  byte west_button_state = digitalRead(west_button_pin);
+
+  eastLDRreading = digitalRead(eastLDR); 
+  westLDRreading = digitalRead(westLDR);
+
+  Serial.print(" East = "); 
+  Serial.println(eastLDRreading); 
+  Serial.print(" West = "); 
+  Serial.println(westLDRreading); 
+  Serial.println(" ");
+\end{lstlisting}
+\clearpage

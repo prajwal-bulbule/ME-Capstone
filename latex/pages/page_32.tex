@@ -1,0 +1,54 @@
+% ==============================================================================
+% PAGE 32: TRACKING COMPONENTS & WORKING PRINCIPLE (Numbered Page 24)
+% ==============================================================================
+\subsubsection*{2. Type of Tracking}
+\noindent
+{\fontsize{10}{14}\selectfont
+\textbf{Type:} Single Axis Automatic Tracking\\[1mm]
+\textbf{Axis of Rotation:} East--West (horizontal axis)\\[1mm]
+\textbf{Purpose:} To maintain continuous alignment of the parabolic dish with the moving sun during the day.\\[1mm]
+\textbf{Control:} Automatic using sensors and motor.
+}
+
+\vspace{3mm}
+\subsubsection*{3. Components of Single Axis Tracking System}
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|p{42mm}|p{82mm}|}
+\hline
+\rowcolor{gray!20}
+\textbf{Component} & \textbf{Specification / Function} \\
+\hline
+LDR Sensors (2 No.) & Detect sunlight intensity difference on both sides \\
+\hline
+Control Circuit / Comparator & Compares LDR signals and controls motor direction \\
+\hline
+PMDC Motor (6--9V, 10--15W) & Provides rotary motion for dish movement \\
+\hline
+Motor Driver (L293D / Relay) & Drives motor forward or reverse based on sensor input \\
+\hline
+V-Groove Belt \& Pulley (25 cm Pulley) & Transfers motion from motor to dish \\
+\hline
+Power Supply & 12V DC battery charged by small solar panel \\
+\hline
+Dish Support Frame & Allows rotation of dish around single horizontal axis \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{2mm}
+\subsubsection*{4. Working Principle}
+\noindent
+{\fontsize{10}{14}\selectfont
+\textbf{$\blacklozenge$ Sensing Sunlight:}
+\begin{itemize}[leftmargin=6mm, itemsep=1mm, label=\textbullet]
+  \item Two LDR sensors are placed on either side of a small divider.
+  \item When sunlight falls equally on both $\rightarrow$ system is balanced $\rightarrow$ motor off.
+\end{itemize}
+\textbf{$\blacklozenge$ Sun Movement:}
+\begin{itemize}[leftmargin=6mm, itemsep=1mm, label=\textbullet]
+  \item As the sun shifts from East to West, one LDR receives more light.
+  \item The control circuit detects the difference in voltage between LDRs.
+\end{itemize}
+}
+\clearpage

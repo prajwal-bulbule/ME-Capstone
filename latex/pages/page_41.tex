@@ -1,0 +1,36 @@
+% ==============================================================================
+% PAGE 41: PROGRAMING - PART 4 (Numbered Page 33)
+% ==============================================================================
+\begin{lstlisting}[language=C++]
+  if (east_button_state == LOW){ 
+    Serial.println("East Button Is Pressed"); 
+    motorButtoneast(); 
+  } 
+  else 
+    motorStop(); 
+
+  if (west_button_state == LOW){ 
+    Serial.println("West Button Is Pressed"); 
+    motorButtonwest(); 
+  } 
+  else 
+    motorStop(); 
+
+  if (eastLDRreading > westLDRreading){ 
+    motorLDReast(); 
+  } 
+  else 
+    motorStop(); 
+
+  if (eastLDRreading < westLDRreading){ 
+    motorLDRwest(); 
+  } 
+  else 
+    motorStop(); 
+
+  if (eastLDRreading == westLDRreading){ 
+    motorStop(); 
+  } 
+}
+\end{lstlisting}
+\clearpage

@@ -1,0 +1,44 @@
+% ==============================================================================
+% PAGE 1: OUTER COVER PAGE
+% ==============================================================================
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  % Dark background
+  \fill[fill=black!92] (current page.north west) rectangle (current page.south east);
+  % Outer Gold Border
+  \draw[line width=2.5pt, color=Goldenrod!90!black]
+    ([xshift=12mm, yshift=-12mm]current page.north west) rectangle ([xshift=-12mm, yshift=12mm]current page.south east);
+  % Inner Gold Border
+  \draw[line width=1.0pt, color=Goldenrod!80!black]
+    ([xshift=14.5mm, yshift=-14.5mm]current page.north west) rectangle ([xshift=-14.5mm, yshift=14.5mm]current page.south east);
+\end{tikzpicture}
+
+\vspace*{-8mm}
+\begin{center}
+  {\fontsize{18}{22}\selectfont \bfseries \textcolor{Goldenrod!95!white}{GOVERNMENT POLYTECHNIC,}\\[3mm]
+  \textcolor{Goldenrod!95!white}{AMRAVATI}}\\[4mm]
+  {\fontsize{10}{13}\selectfont \bfseries \textcolor{Goldenrod!80!white}{(AN AUTONOMOUS INSTITUTE OF GOVERNMENT OF MAHARASHTRA)}}\\[6mm]
+  
+  \includegraphics[width=32mm]{figures/gpa_logo.png}\\[6mm]
+  
+  {\fontsize{13}{16}\selectfont \bfseries \textcolor{Goldenrod!90!white}{DEPARTMENT OF MECHANICAL ENGINEERING}\\[2mm]
+  \textcolor{Goldenrod!90!white}{(2025--2026)}}\\[8mm]
+  
+  {\fontsize{12}{15}\selectfont \bfseries \textcolor{Goldenrod!90!white}{A PROJECT ON}}\\[4mm]
+  {\fontsize{13}{17}\selectfont \bfseries \textcolor{Goldenrod!95!white}{``DESIGN AND FABRICATION OF PARABOLIC WATER HEATER\\[2mm]
+  WITH SOLAR TRACKING AND POWER GENERATION''}}\\[7mm]
+  
+  {\fontsize{11}{14}\selectfont \bfseries \textcolor{Goldenrod!90!white}{UNDER THE GUIDANCE OF}}\\[2mm]
+  {\fontsize{13}{16}\selectfont \bfseries \underline{\textcolor{Goldenrod!95!white}{Prof. A. R. BANSALI}}}\\[7mm]
+  
+  {\fontsize{12}{15}\selectfont \bfseries \textcolor{Goldenrod!90!white}{$\sim$SUBMITTED BY$\sim$}}\\[4mm]
+  
+  \begin{tabular}{ll}
+    \textbf{\textcolor{Goldenrod!95!white}{MS. ASHWINI R. HAGE}} & \textbf{\textcolor{Goldenrod!95!white}{(23ME031)}} \\[1.5mm]
+    \textbf{\textcolor{Goldenrod!95!white}{MR. ROHAN S. HAGE}}    & \textbf{\textcolor{Goldenrod!95!white}{(23ME032)}} \\[1.5mm]
+    \textbf{\textcolor{Goldenrod!95!white}{MR. AMAY P. KADAM}}   & \textbf{\textcolor{Goldenrod!95!white}{(23ME044)}} \\[1.5mm]
+    \textbf{\textcolor{Goldenrod!95!white}{MS. NANDINI R. KALE}}  & \textbf{\textcolor{Goldenrod!95!white}{(23ME047)}} \\[1.5mm]
+    \textbf{\textcolor{Goldenrod!95!white}{MR. PRANAV V. KALPANDE}} & \textbf{\textcolor{Goldenrod!95!white}{(23ME048)}}
+  \end{tabular}
+\end{center}
+\clearpage

@@ -1,0 +1,40 @@
+% ==============================================================================
+% PAGE 38: CHAPTER-6 PROGRAMING - PART 1 (Numbered Page 30)
+% ==============================================================================
+\begin{center}
+  {\fontsize{15}{18}\selectfont \bfseries \textcolor{red!80!black}{\underline{CHAPTER-6}}}\\[2mm]
+  {\fontsize{16}{20}\selectfont \bfseries \textcolor{red!80!black}{\underline{PROGRAMING}}}\\[5mm]
+\end{center}
+
+\begin{lstlisting}[language=C++]
+#define east_button_pin 2 
+#define west_button_pin 3
+
+int motr1 = 4; 
+int motr2 = 5;
+
+int eastLDR = 6; 
+int westLDR = 7;
+
+int eastLDRreading = 0; 
+int westLDRreading = 0;
+
+void setup(){ 
+  pinMode(motr1, OUTPUT); 
+  pinMode(motr2, OUTPUT);
+
+  pinMode(east_button_pin, INPUT_PULLUP); 
+  pinMode(west_button_pin, INPUT_PULLUP);
+
+  pinMode(eastLDR, INPUT); 
+  pinMode(westLDR, INPUT);
+
+  digitalWrite(motr1, LOW); 
+  digitalWrite(motr2, LOW);
+
+  Serial.begin(9600);
+  Serial.println("Design and Fabrication of Solar Air Heater With "); 
+  Serial.println("Active Solar Tracking");
+}
+\end{lstlisting}
+\clearpage
